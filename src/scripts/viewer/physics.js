@@ -4,9 +4,9 @@
 module.exports = function () {
   return {
     springLength : 80,
-    springCoeff : 0.0002,
-    gravity: -1.2,
-    theta : 0.8,
+    springCoeff : 0.0004,
+    gravity: -5.2,
+    theta : 0.5,
     dragCoeff : 0.02
   };
 };

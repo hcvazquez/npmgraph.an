@@ -1,8 +1,8 @@
 var svg = require('simplesvg');
 var eventify = require('ngraph.events');
 var arrow = require('./arrow');
-var defaultNodeColor = '#CFCCDF';
-var defaultTextColor = '#484A5C';
+var defaultNodeColor = '#ffffff';
+var defaultTextColor = '#ececec';
 
 module.exports = function(svgRoot) {
   var nodeUIModels = Object.create(null);
@@ -29,7 +29,7 @@ module.exports = function(svgRoot) {
 
     resetLinks: function() {
       Object.keys(linkUIModels).forEach(function(key) {
-        highlightLink(key, '#5A5D6E');
+        highlightLink(key, '#ececec');
       });
     },
 
@@ -83,7 +83,7 @@ module.exports = function(svgRoot) {
 
     link: function(link) {
       var ui = arrow(svgRoot);
-      ui.stroke("#5A5D6E");
+      ui.stroke("#ececec");
 
       linkUIModels[link.id] = ui;
       return ui;

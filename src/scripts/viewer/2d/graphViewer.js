@@ -85,10 +85,10 @@ function graphViewer() {
             resetHighlight();
 
             graphUI.resetLinks();
-            graphUI.highlight(node.id, '#E0DE0F', '#E0DE0F');
+            graphUI.highlight(node.id, '#e08a23', '#E0DE0F');
 
             graph.forEachLinkedNode(node.id, function(other, link) {
-              var color = '#CFCCDF';
+              var color = '#E0DE0F';
               graphUI.highlight(other.id, color);
               graphUI.highlightLink(link.id, color);
             });
